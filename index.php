@@ -13,8 +13,10 @@ while ($row=pg_fetch_row($result)) {
 	if ($row[0]==$username && $row[1]==$password) {
 		echo "Successfull";
 	}else{
-		echo "Failed";
 	}
+}
+if($result){
+	echo'done';
 }
 ?>
 <!DOCTYPE html>
